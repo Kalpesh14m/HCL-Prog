@@ -1,0 +1,115 @@
+# # 1. CharToCode And CodeToChar
+#
+# choice=1
+# while choice!=0:
+#     print("1. CharToCode")
+#     print("2. CodeToChar")
+#     choice = int(raw_input("Enter choice: "))
+#     if choice == 1:
+#         char = raw_input("Enter Char: ")
+#         print("Result: ", ord(char))
+#     elif choice == 2:
+#         code = int(raw_input("Enter Code: "))
+#         print("Result: ", chr(code))
+#     elif choice == 0:
+#         print("Exiting!")
+#     else:
+#         print("Invalid choice!!")
+
+# # 2. Common ele in 3 array
+
+# a = [1,2,3,8,4,5,9]
+# b = [5,3,6,8,9]
+# c = [1,8,3,6,9]
+#
+# for i in a:
+# 	for j in b:
+# 		if i == j:
+# 			for k in c:
+# 				if j == k:
+# 					print(k)
+
+
+
+# # 3. Find Vowles
+# st = raw_input("Enter String")
+# st = st.lower()
+
+# a=0
+# e=0
+# i=0
+# o=0
+# u=0
+#
+# for ch in st:
+# 	if ch == 'a' or ch == 'e' or ch == 'i' or ch == 'o' or ch =='u':
+# 		if ch == 'a':
+# 			a = a + 1
+# 		elif ch == 'e':
+# 			e = e + 1
+# 		elif ch == 'i':
+# 			i = i + 1
+# 		elif ch == 'o':
+# 			o = o+ 1
+# 		elif ch == 'u':
+# 			u = u + 1
+#
+# print("\nA = ", a)
+# print("\nE = ", e)
+# print("\nI = ", i)
+# print("\nO = ", o)
+# print("\nU = ", u)
+
+# # 4. Arithmatic op using Class
+# class cal():
+#     def __init__(self,a,b):
+#         self.a=a
+#         self.b=b
+#     def add(self):
+#         return self.a+self.b
+#     def mul(self):
+#         return self.a*self.b
+#     def div(self):
+#         return self.a/self.b
+#     def sub(self):
+#         return self.a-self.b
+# a=int(input("Enter first number: "))
+# b=int(input("Enter second number: "))
+# obj=cal(a,b)
+# choice=1
+# while choice!=0:
+#     print("0. Exit")
+#     print("1. Add")
+#     print("2. Subtraction")
+#     print("3. Multiplication")
+#     print("4. Division")
+#     choice=int(input("Enter choice: "))
+#     if choice==1:
+#         print("Result: ",obj.add())
+#     elif choice==2:
+#         print("Result: ",obj.sub())
+#     elif choice==3:
+#         print("Result: ",obj.mul())
+#     elif choice==4:
+#         print("Result: ",round(obj.div(),2))
+#     elif choice==0:
+#         print("Exiting!")
+#     else:
+#         print("Invalid choice!!")
+# print()
+
+
+# # 5. Fibonecci Recusion
+# def fib(n):
+#     if n <= 1:
+#         return n
+#     else:
+#         return (fib(n-1)+fib(n-2))
+#
+# no = int(raw_input("Enter Length: "))
+#
+# if no<= 0:
+#     print("Please Enter positive No")
+# else:
+#     for i in range(no):
+#         print(fib(i))
